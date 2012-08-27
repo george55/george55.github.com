@@ -1,0 +1,25 @@
+doctype 5
+html(lang="en")
+  head
+    link(href="main.css", rel="stylesheet")
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js")
+    script(src="vendor/bootstrap/js/bootstrap.min.js")
+  body
+    include jade/nav.jade
+    div.tab-content
+      div.tab-pane.active#home
+        include jade/home.jade
+      div.tab-pane#growers
+        include jade/growers.jade
+        
+    footer.footer
+      div.container
+        address
+          strong Poultry Power USA
+          p 4315 Pablo Oaks Court, Suite 5
+          p Jacksonville, FL 32224
+          p 904-619-1214
+          a(href="mailto:contact@poultrypowerusa.com") contact@poultrypowerusa.com
+        p &copy; 2012 Poultry Power USA
+        
+        
